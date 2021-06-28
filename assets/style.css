@@ -26,7 +26,6 @@ nav {
     align-items: center;
     padding: 5px 15px;
     background: transparent;
-    border-bottom: 10px solid white;
     position: fixed;
     top: 0;
     left: 0;
@@ -131,6 +130,11 @@ footer p {
 }
 
 @media(max-width: 768px) {
+    header {
+        background-image: url(images/header/header1.png);
+        background-attachment: fixed;
+    }
+
     .list-menu {
         position: absolute;
         background: white;
