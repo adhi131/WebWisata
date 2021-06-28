@@ -21,3 +21,143 @@ header {
     background-position: center;
 }
 
+nav {
+    display: flex;
+    align-items: center;
+    padding: 5px 15px;
+    background: #16c79a;
+    border-bottom: 10px solid white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+}
+
+.logo img{
+    width: 100px;
+    padding: 0 10px;
+}
+
+.list-menu {
+    flex: 1;
+    text-align: right;
+}
+
+.list-menu li{
+    display: inline-block;
+    list-style: none;
+    text-transform: uppercase;
+    padding: 0px 10px;
+}
+.list-menu a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+}
+
+.list-menu li::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #11698e;
+    display: block;
+    margin: auto;
+    transition: 0.3s;
+}
+
+.list-menu a:hover {
+    color: #11698e;
+    transition: 0.5s;
+}
+
+.list-menu li:hover::after {
+    width: 100%;
+}
+
+@media(max-width: 768px) {
+    .list-menu {
+        position: absolute;
+        background: white;
+        height: 100vh;
+        width: 220px;
+        top: 0;
+        right: 0;
+        text-align: left;
+        z-index: 2;
+        margin-top: 0;
+        padding-top: 10px;
+        padding-left: 10px;
+        opacity:0;
+        transition: 0.3s;
+    }
+
+    .active {
+        opacity: 1;
+    }
+
+    .list-menu li {
+        display: block;
+        padding: 0;
+    }
+
+    .list-menu li:hover::after {
+        display: none;
+    }
+
+    .list-menu a {
+        color: #11698e;
+    }
+    
+    .menu {
+        display:block;
+        position:absolute;
+        width:30px;
+        height:25px;
+        right:10px;
+        top:10px;
+        z-index:200;
+    }
+
+    .nav-icon {
+        display:inline-block;
+        position: relative;
+        width:30px;
+        height:5px;
+        background: white;
+        transition-property: background, transform;
+        transition-duration: 0.3s;
+    }
+
+    .nav-icon:before,
+    .nav-icon:after {
+    content:'';
+    display:block;
+    width:30px;
+    height:5px;
+    position: absolute;
+    background: white;
+    transition-property: margin, transform;
+    transition-duration: 0.3s;
+    }
+
+    .nav-icon:before {
+        margin-top:-10px;
+    }
+
+    .nav-icon:after {
+        margin-top:10px;
+    }
+
+    .active-icon::before {
+        background-color: crimson;
+        margin-top:0;
+        transform:rotate(45deg);
+    }
+
+    .active-icon:after {
+        background-color: crimson;
+        margin-top:0;
+        transform:rotate(-45deg);
+    }
+}
