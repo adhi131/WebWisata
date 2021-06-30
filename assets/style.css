@@ -229,7 +229,7 @@ footer p {
 }
 
 @media(max-width: 768px) {
-    header {
+    #home {
         background-image: url(images/header/header1.png);
         background-attachment: fixed;
     }
