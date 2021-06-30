@@ -1,6 +1,4 @@
 const slider = document.querySelector('.slider');
-const nextBtn = document.querySelector('.next-btn');
-const prevBtn = document.querySelector('.prev-btn');
 
 var counter = 1;
 var playSlider;
