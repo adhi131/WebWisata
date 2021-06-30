@@ -49,7 +49,7 @@ nav.scroll {
 }
 .list-menu a {
     text-decoration: none;
-    color: white;
+    color: #fff;
     font-size: 18px;
 }
 
@@ -76,28 +76,37 @@ section {
     height: 100vh;
 }
 
+section h1 {
+    padding-top: 80px;
+    margin-left: 5%;
+    font-size: 40px;
+}
+
+section:nth-child(odd) {
+    color: #fff;
+}
+
 #home {
     background-image: url(images/header/header.png);
     background-size: cover;
     background-position: center;
 }
 
-.text-header {
-    color: white;
+.content {
     position: absolute;
     top: 30%;
     left: 5%;
 }
 
-.text-header h1 {
-    font-size: 40px;
-    text-shadow: 2px 1px grey;
+#home .content h1 {
+    text-shadow: 2px 1px #808080;
     margin: 0;
+    padding-top: 0;
 }
 
-.text-header p {
+.content p {
     font-size: 20px;
-    text-shadow: 1px 0px grey;
+    text-shadow: 1px 0px #808080;
     font-family: 'Nunito', sans-serif;
     margin: 0;
     text-indent: 5px;
@@ -106,8 +115,8 @@ section {
 .btn {
     display: inline-block;
     text-decoration: none;
-    border: 1px solid white;
-    color: white;
+    border: 1px solid #fff;
+    color: #fff;
     padding: 12px 34px;
     font-size: 15px;
     position: relative;
@@ -132,11 +141,45 @@ section {
     transition: box-shadow 0.2s;
 }
 
+.prevnext-btn {
+    color: #222;
+    opacity: 0;
+    transition: opacity 0.2s;
+}
+
+.prev, .next {
+    position: absolute;
+    font-size: 2em;
+    top: 40%;
+    padding: 10px;
+    width: 40px;
+    border: none;
+    background: rgba(255, 255, 255, 0.8);
+}
+
+.prev{
+    left: 0;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+  }
+  
+.next{
+    right: 0;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+}
+
+.prev:hover, .next:hover {
+    background: #808080;
+    cursor: pointer;
+}
+
 .slider:hover {
     box-shadow: 0 10px 50px -10px rgba(0,0,0,0.25);
 }
 
-.slider:hover .container {
+.slider:hover .container,
+.slider:hover .prevnext-btn {
     opacity: 1;
 }
 
@@ -216,6 +259,10 @@ section {
     transition: background-color 0.6s;
 }
 
+.dot:hover {
+    cursor: pointer;
+}
+
 .dot:not(:last-child) {
     margin-right: 5px;
 }
@@ -259,7 +306,7 @@ footer p {
 
     .list-menu {
         position: absolute;
-        background: white;
+        background: #fff;
         height: 100vh;
         width: 220px;
         top: 0;
@@ -309,7 +356,7 @@ footer p {
         position: relative;
         width:30px;
         height:5px;
-        background: white;
+        background: #fff;
         transition-property: background, transform;
         transition-duration: 0.3s;
     }
@@ -321,7 +368,7 @@ footer p {
         width:30px;
         height:5px;
         position: absolute;
-        background: white;
+        background: #fff;
         transition-property: margin, transform;
         transition-duration: 0.3s;
     }
@@ -335,13 +382,13 @@ footer p {
     }
 
     .active-icon::before {
-        background-color: crimson;
+        background-color: #dc143c;
         margin-top:0;
         transform:rotate(45deg);
     }
 
     .active-icon:after {
-        background-color: crimson;
+        background-color: #dc143c;
         margin-top:0;
         transform:rotate(-45deg);
     }
