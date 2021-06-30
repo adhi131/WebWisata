@@ -171,6 +171,7 @@ section:nth-child(odd) {
 
 .prev:hover, .next:hover {
     background: #808080;
+    color: #fff;
     cursor: pointer;
 }
 
