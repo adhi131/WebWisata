@@ -73,7 +73,6 @@ nav.scroll {
 }
 
 section h1 {
-    
     padding-top: 70px;
     margin: 0;
     margin-left: 5%;
@@ -82,6 +81,7 @@ section h1 {
 
 section:nth-child(odd) {
     color: #fff;
+    background: #16c79a;
 }
 
 #home {
@@ -294,6 +294,27 @@ section:nth-child(odd) {
 	margin: 0 5% 80px;
 }
 
+.interest a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.interest {
+    position: relative;
+    text-align: center;
+    overflow: hidden;
+    max-width: 200px;
+    height: 230px;
+	margin: 10px;
+	box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.5);
+}
+
+.interest img {
+    transition: 0.5s ease-in-out;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .caption {
     position: absolute;
     z-index: 2;
@@ -311,16 +332,6 @@ section:nth-child(odd) {
     transition: opacity 0.5s;
 }
 
-.interest {
-    position: relative;
-    text-align: center;
-    overflow: hidden;
-    max-width: 200px;
-    height: 230px;
-	margin: 10px;
-	box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.5);
-}
-
 .interest:hover img {
     transform: translateY(-10px);
 }
@@ -333,15 +344,8 @@ section:nth-child(odd) {
     opacity: 1;
 }
 
-.interest img {
-    transition: 0.5s ease-in-out;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-figure a {
-    text-decoration: none;
-    color: #fff;
+#about {
+    height: 100vh;
 }
 
 footer {
@@ -452,6 +456,25 @@ footer p {
 
     .slider {
         display: none;
+    }
+
+    section h1 {
+        text-align: center;
+        margin-left: 2%;
+    }
+
+    #about h1::after,
+    #contact h1::after {
+        content: '';
+        margin: auto;
+        display: block;
+        background: #fff;
+        height: 3px;
+        width: 10%;
+    }
+
+    .home-caption h1 {
+        text-align: unset;
     }
 
     .content {
