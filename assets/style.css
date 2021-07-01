@@ -362,6 +362,7 @@ footer p {
     }
 
     .list-menu {
+        display: none;
         position: absolute;
         background: #fff;
         height: 100vh;
@@ -373,7 +374,6 @@ footer p {
         margin-top: 0;
         padding-top: 10px;
         padding-left: 10px;
-        opacity:0;
         transition: 0.3s;
     }
 
@@ -382,7 +382,7 @@ footer p {
     }
 
     .active {
-        opacity: 1;
+        display: block;
     }
 
     .list-menu li {
