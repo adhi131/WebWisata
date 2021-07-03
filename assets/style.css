@@ -565,6 +565,14 @@ footer p {
         justify-content: flex-start;
     }
 
+    .caption {
+        background: rgba(0, 0, 0, 0.2);
+    }
+
+    .caption p {
+        opacity: 1;
+    }
+
 }
 
 @media(max-width: 900px) {
@@ -582,6 +590,19 @@ footer p {
         justify-content: center;
         margin-left: 0;
     }
+
+    .caption {
+        background: rgba(0, 0, 0, 0.2);
+    }
+
+    .caption p {
+        opacity: 1;
+    }
+
+    article p {
+        margin-left: 10px;
+        margin-right: 20px;
+    }
 }
 
 @media(max-width: 768px) {
@@ -595,18 +616,5 @@ footer p {
 
     .slider {
         display: none;
-    }
-
-    .caption {
-        background: rgba(0, 0, 0, 0.2);
-    }
-
-    .caption p {
-        opacity: 1;
-    }
-
-    article p {
-        margin-left: 10px;
-        margin-right: 20px;
     }
 }
