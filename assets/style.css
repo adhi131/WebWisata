@@ -564,15 +564,6 @@ footer p {
         margin-left: 8%;
         justify-content: flex-start;
     }
-
-    .caption {
-        background: rgba(0, 0, 0, 0.2);
-    }
-
-    .caption p {
-        opacity: 1;
-    }
-
 }
 
 @media(max-width: 900px) {
