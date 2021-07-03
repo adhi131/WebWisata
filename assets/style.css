@@ -293,7 +293,7 @@ section:nth-child(odd) {
 .content {
     display: flex;
     flex-wrap: wrap;
-	max-width: 880px;
+    max-width: 1200px;
 	margin: 0 auto 0;
     padding-bottom: 80px;
 }
@@ -554,6 +554,10 @@ footer p {
     
     .slider {
         height: 45%;
+    }
+
+    .content {
+        max-width: 880px;
     }
 
     .flex-container {
