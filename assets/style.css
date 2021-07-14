@@ -668,6 +668,11 @@ footer p {
         height: 187px;
     }
 
+    .interest img {
+        width: 150px;
+        height: 200px;
+    }
+
     .caption {
         display: flex;
         align-items: center;
