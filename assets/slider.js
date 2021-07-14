@@ -1,6 +1,6 @@
 const slider = document.querySelector('.slider');
-const prev=document.querySelector(".prev");
-const next=document.querySelector(".next");
+const prev=document.querySelector('.prev');
+const next=document.querySelector('.next');
 
 var counter = 1;
 var playSlider;
@@ -31,11 +31,11 @@ function nextSlide() {
   document.getElementById('radio' + counter).checked = true;
 }
 
-prev.addEventListener("click",function(){
+prev.addEventListener('click',function(){
   prevSlide();
 })
 
-next.addEventListener("click",function(){
+next.addEventListener('click',function(){
  nextSlide();
  
 })
