@@ -14,6 +14,10 @@ body {
     width: 100%;
 }
 
+main {
+    position: relative;
+}
+
 nav {
     display: flex;
     align-items: center;
@@ -92,9 +96,10 @@ section:nth-child(odd) {
 }
 
 .home-caption {
-    position: absolute;
+    position: relative;
     top: 30%;
     left: 5%;
+    width: fit-content;
 }
 
 .home-caption h1 {
@@ -132,7 +137,7 @@ section:nth-child(odd) {
 .slider {
     position: relative;
     border-radius: 5px;
-    top: 25%;
+    top: 5%;
     left: 55%;
     width: 40%;
     height: 50%;
@@ -440,7 +445,40 @@ section:nth-child(odd) {
     background: #00acee;
 }
 
+.to-top-wrapper {
+    position: absolute;
+    top: 100vh;
+    bottom: -80px;
+    right: 20px;
+    pointer-events: none;
+    width: 40px;
+}
+
+.to-top {
+    display: flex;
+    text-decoration: none;
+    position: fixed;
+    position: sticky;
+    width: 40px;
+    height: 50px;
+    font-size: 40px;
+    top: calc(100vh - 120px);
+    color: #fff;
+    background: #00171F;
+    border-radius: 3px;
+    justify-content: center;
+    align-items: center;
+    pointer-events: all;
+    transition: transform 80ms ease-in;
+}
+
+.to-top:hover {
+    background: #003459;
+}
+
 footer {
+    position: relative;
+    bottom: -30px;
     background: #19456b;
     color: #fff;
     padding: 5px;
