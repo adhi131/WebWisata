@@ -325,7 +325,7 @@ section:nth-child(odd) {
     height: 100%;
 }
 
-.caption h2 {
+.caption .title {
     text-shadow: 0px 3px 1px rgba(0, 0, 0, 0.5), 0px -2px 1px rgba(0, 0, 0, 0.5);
 }
 
@@ -570,14 +570,6 @@ footer p {
         opacity: 1;
     }
 
-    .caption {
-        background: rgba(0, 0, 0, 0.2);
-    }
-
-    .caption p {
-        opacity: 1;
-    }
-
     article p {
         margin-left: 10px;
         margin-right: 20px;
@@ -612,5 +604,33 @@ footer p {
 
     .slider {
         display: none;
+    }
+
+    .interest {
+        margin: 5px;
+    }
+
+    .caption {
+        background: rgba(0, 0, 0, 0.2);
+    }
+
+    .caption .title {
+        text-shadow: none;
+    }
+
+    .caption p {
+        opacity: 1;
+    }
+}
+
+@media(max-width: 480px) {
+    .interest {
+        width: 150px;
+        height: 187px;
+    }
+
+    .caption .title {
+        margin-top: 5px;
+        margin-bottom: 5px;
     }
 }
